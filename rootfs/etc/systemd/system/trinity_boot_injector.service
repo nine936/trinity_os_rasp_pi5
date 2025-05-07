@@ -1,0 +1,11 @@
+[Unit]
+Description=Trinity Boot Injector
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/trinity/bin/trinity_boot_injector.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

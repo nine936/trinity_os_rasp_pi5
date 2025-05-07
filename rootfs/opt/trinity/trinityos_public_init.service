@@ -1,0 +1,11 @@
+[Unit]
+Description=TrinityOS RPi5 Public Shell
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /opt/trinity/modules/public_shell/shell_launcher.sh
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,23 @@
+.trinity/
+*.gguf
+nohup.out
+*.safetensors
+# System
+*.DS_Store
+*.swp
+*.bak
+*.tmp
+# Python
+__pycache__/
+*.pyd
+.venv/
+# OS / Image / Pi
+*.img.zip
+*.gz
+*.xz
+*.iso
+# Secrets
+*.key
+*.pem
+*.crt
+vault/

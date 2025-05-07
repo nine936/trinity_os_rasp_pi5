@@ -1,0 +1,9 @@
+#!/bin/bash
+# rc.local - TrinityOS First Boot Trigger
+
+# Run the installer script if it exists
+if [ -f /install.sh ]; then
+    bash /install.sh
+fi
+
+exit 0

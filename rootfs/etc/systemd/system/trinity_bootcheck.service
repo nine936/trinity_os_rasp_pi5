@@ -1,0 +1,14 @@
+[Unit]
+Description=🧠 TrinityAI Boot Check Service
+After=network.target local-fs.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/trinity/bin/trinity_bootcheck.sh
+StandardOutput=journal
+StandardError=journal
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
